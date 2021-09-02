@@ -16,13 +16,13 @@ int main(void)
     string text = get_string("Text: ");
 
     // Number of letters, words and sentences
-    float letters = count_letters(text);
-    float words = count_words(text) + 1;
-    float sentences = count_sentences(text);
+    int letters = count_letters(text);
+    int words = count_words(text) + 1;
+    int sentences = count_sentences(text);
 
     // Calculating the index
-    float L = letters / words * 100;
-    float S = sentences / words * 100;
+    float L = (float)letters / words * 100;
+    float S = (float)sentences / words * 100;
     float index = 0.0588 * L - 0.296 * S - 15.8;
 
     if (index < 1)
