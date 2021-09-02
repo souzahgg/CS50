@@ -61,5 +61,4 @@ int main(void)
     printf("Number of Nickels: %i\n", nickel_count);
     printf("Number of Pennies: %i\n", penny_count);
     printf("Total Coins: %i\n", coin_count);
-
 }
